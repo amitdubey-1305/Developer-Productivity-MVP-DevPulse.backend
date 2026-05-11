@@ -1,0 +1,47 @@
+{
+  "leadTime": {
+    "what": "The total time from when a feature is requested (Jira ticket created) to when it's live in production. It covers the full journey: waiting, coding, reviewing, testing, and deploying.",
+    "why": "Lead time shows how fast your team delivers value to users. Long lead times often mean too much waiting — not too much coding.",
+    "good": "Less than 2 days — your pipeline is fast and friction-free.",
+    "okay": "2 to 5 days — decent, but look for bottlenecks in review or deployment.",
+    "bad": "More than 5 days — something is slowing you down. Check queue times and handoffs.",
+    "source": "Jira (ticket created date) + CI/CD (deployment timestamp)",
+    "unit": "days"
+  },
+  "cycleTime": {
+    "what": "The time from when a developer starts working on a task (first commit or branch created) to when it's merged and deployed. Unlike lead time, this doesn't include the waiting period before work begins.",
+    "why": "Cycle time measures your actual engineering speed. If cycle time is low but lead time is high, the problem isn't coding — it's the queue before coding starts.",
+    "good": "Less than 1 day — code is moving fast from dev to production.",
+    "okay": "1 to 3 days — normal for most teams, but PRs might be sitting in review too long.",
+    "bad": "More than 3 days — PRs are likely too large, reviews are slow, or CI is failing frequently.",
+    "source": "GitHub (first commit → PR merge) + CI/CD (merge → deploy)",
+    "unit": "days"
+  },
+  "bugRate": {
+    "what": "The percentage of deployments or changes that introduced a bug reported within 7 days. Calculated as (bugs found / total changes deployed) × 100.",
+    "why": "A high bug rate means code is shipping without enough testing or review. It costs more to fix bugs in production than to catch them before deployment.",
+    "good": "Less than 2% — your quality gates are working well.",
+    "okay": "2% to 5% — typical, but worth investigating which types of changes cause bugs.",
+    "bad": "More than 5% — serious quality issue. Check test coverage, review depth, and deployment practices.",
+    "source": "Bug tracker (Jira bugs linked to releases) + CI/CD (deployment count)",
+    "unit": "%"
+  },
+  "deploymentFrequency": {
+    "what": "How many times your code is deployed to production in a week. This is one of the four DORA metrics used by Google to measure engineering team performance.",
+    "why": "Frequent deployments mean smaller changes, lower risk per release, and faster feedback. Teams that deploy often tend to have fewer incidents.",
+    "good": "More than 15 per week — you're shipping fast with small, safe changes.",
+    "okay": "5 to 15 per week — solid, but there may be room to break work into smaller deployable units.",
+    "bad": "Less than 5 per week — large batch releases increase risk. Consider CI/CD improvements.",
+    "source": "CI/CD pipeline (successful production deployments per week)",
+    "unit": "per week"
+  },
+  "prThroughput": {
+    "what": "The total number of pull requests opened and merged in a given period. This measures how actively code is being reviewed and integrated.",
+    "why": "PR throughput reflects collaboration health. Low throughput might mean PRs are too big (hard to review), reviewers are overloaded, or developers are blocked.",
+    "good": "More than 40 PRs per sprint — healthy flow of small, reviewable changes.",
+    "okay": "20 to 40 PRs per sprint — decent, but check if PRs are sitting idle in review.",
+    "bad": "Less than 20 PRs per sprint — possible bottleneck. Are PRs too large? Are reviewers available?",
+    "source": "GitHub (pull request open/merge events per sprint)",
+    "unit": "PRs"
+  }
+}

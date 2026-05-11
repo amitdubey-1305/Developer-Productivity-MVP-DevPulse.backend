@@ -1,0 +1,229 @@
+[
+  {
+    "id": 1,
+    "name": "Amit Dubey",
+    "role": "Full Stack Developer",
+    "avatar": "AD",
+    "leadTime": 2.8,
+    "cycleTime": 1.4,
+    "bugRate": 3.2,
+    "deploymentFrequency": 14,
+    "prThroughput": 42,
+    "weeklyData": [
+      { "day": "Mon", "commits": 8, "prsOpened": 3, "prsMerged": 2 },
+      { "day": "Tue", "commits": 12, "prsOpened": 4, "prsMerged": 3 },
+      { "day": "Wed", "commits": 6, "prsOpened": 2, "prsMerged": 4 },
+      { "day": "Thu", "commits": 15, "prsOpened": 5, "prsMerged": 3 },
+      { "day": "Fri", "commits": 10, "prsOpened": 3, "prsMerged": 5 },
+      { "day": "Sat", "commits": 3, "prsOpened": 1, "prsMerged": 1 },
+      { "day": "Sun", "commits": 1, "prsOpened": 0, "prsMerged": 0 }
+    ],
+    "recentPRs": [
+      { "title": "feat: Add user authentication flow", "status": "merged", "reviewTimeHours": 4.2, "linesChanged": 340, "ciPassed": true },
+      { "title": "fix: Resolve race condition in payment handler", "status": "merged", "reviewTimeHours": 8.5, "linesChanged": 89, "ciPassed": true },
+      { "title": "refactor: Extract API client to shared module", "status": "open", "reviewTimeHours": null, "linesChanged": 520, "ciPassed": false },
+      { "title": "feat: Dashboard metric cards component", "status": "merged", "reviewTimeHours": 2.1, "linesChanged": 210, "ciPassed": true },
+      { "title": "fix: Handle null user profile gracefully", "status": "merged", "reviewTimeHours": 1.5, "linesChanged": 45, "ciPassed": true }
+    ],
+    "recentBugs": [
+      { "title": "Login fails silently on expired token", "severity": "critical", "resolvedInHours": 3 },
+      { "title": "Dashboard charts flicker on data refresh", "severity": "minor", "resolvedInHours": 12 },
+      { "title": "API returns 500 on empty search query", "severity": "major", "resolvedInHours": 6 }
+    ],
+    "cicdRuns": [
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 142, "triggeredBy": "PR #287" },
+      { "pipeline": "Build & Test", "status": "failed", "durationSeconds": 89, "triggeredBy": "PR #285" },
+      { "pipeline": "Deploy to Staging", "status": "success", "durationSeconds": 210, "triggeredBy": "merge to main" },
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 155, "triggeredBy": "PR #283" },
+      { "pipeline": "Deploy to Production", "status": "success", "durationSeconds": 185, "triggeredBy": "release v2.4.1" }
+    ],
+    "jiraTickets": [
+      { "key": "DEV-142", "title": "Implement SSO login", "status": "done", "storyPoints": 5, "daysInProgress": 3 },
+      { "key": "DEV-148", "title": "Optimize image upload pipeline", "status": "in-progress", "storyPoints": 8, "daysInProgress": 5 },
+      { "key": "DEV-151", "title": "Add rate limiting to public API", "status": "done", "storyPoints": 3, "daysInProgress": 1 },
+      { "key": "DEV-155", "title": "Migrate user table to new schema", "status": "blocked", "storyPoints": 13, "daysInProgress": 8 },
+      { "key": "DEV-160", "title": "Write E2E tests for checkout", "status": "in-progress", "storyPoints": 5, "daysInProgress": 2 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "role": "Frontend Engineer",
+    "avatar": "PS",
+    "leadTime": 1.9,
+    "cycleTime": 0.8,
+    "bugRate": 1.5,
+    "deploymentFrequency": 18,
+    "prThroughput": 55,
+    "weeklyData": [
+      { "day": "Mon", "commits": 14, "prsOpened": 5, "prsMerged": 4 },
+      { "day": "Tue", "commits": 11, "prsOpened": 4, "prsMerged": 5 },
+      { "day": "Wed", "commits": 16, "prsOpened": 6, "prsMerged": 4 },
+      { "day": "Thu", "commits": 9, "prsOpened": 3, "prsMerged": 6 },
+      { "day": "Fri", "commits": 13, "prsOpened": 5, "prsMerged": 3 },
+      { "day": "Sat", "commits": 5, "prsOpened": 2, "prsMerged": 2 },
+      { "day": "Sun", "commits": 2, "prsOpened": 1, "prsMerged": 1 }
+    ],
+    "recentPRs": [
+      { "title": "feat: Responsive navigation redesign", "status": "merged", "reviewTimeHours": 1.8, "linesChanged": 280, "ciPassed": true },
+      { "title": "feat: Add dark mode toggle component", "status": "merged", "reviewTimeHours": 0.9, "linesChanged": 125, "ciPassed": true },
+      { "title": "fix: Button alignment on mobile Safari", "status": "merged", "reviewTimeHours": 0.5, "linesChanged": 22, "ciPassed": true },
+      { "title": "feat: Infinite scroll for feed page", "status": "open", "reviewTimeHours": null, "linesChanged": 190, "ciPassed": true },
+      { "title": "refactor: Replace class components with hooks", "status": "merged", "reviewTimeHours": 3.2, "linesChanged": 410, "ciPassed": true }
+    ],
+    "recentBugs": [
+      { "title": "Modal overlay not dismissable on iOS", "severity": "minor", "resolvedInHours": 2 },
+      { "title": "Font loading causes layout shift", "severity": "minor", "resolvedInHours": 4 }
+    ],
+    "cicdRuns": [
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 98, "triggeredBy": "PR #312" },
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 105, "triggeredBy": "PR #310" },
+      { "pipeline": "Deploy to Staging", "status": "success", "durationSeconds": 180, "triggeredBy": "merge to main" },
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 112, "triggeredBy": "PR #308" },
+      { "pipeline": "Deploy to Production", "status": "success", "durationSeconds": 165, "triggeredBy": "release v2.4.2" }
+    ],
+    "jiraTickets": [
+      { "key": "FE-88", "title": "Redesign settings page", "status": "done", "storyPoints": 5, "daysInProgress": 2 },
+      { "key": "FE-91", "title": "Add skeleton loaders to all pages", "status": "done", "storyPoints": 3, "daysInProgress": 1 },
+      { "key": "FE-95", "title": "Implement search with debounce", "status": "in-progress", "storyPoints": 3, "daysInProgress": 1 },
+      { "key": "FE-97", "title": "Accessibility audit fixes", "status": "in-progress", "storyPoints": 8, "daysInProgress": 3 },
+      { "key": "FE-100", "title": "Component library documentation", "status": "done", "storyPoints": 5, "daysInProgress": 2 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Rahul Verma",
+    "role": "Backend Engineer",
+    "avatar": "RV",
+    "leadTime": 3.5,
+    "cycleTime": 2.1,
+    "bugRate": 4.8,
+    "deploymentFrequency": 10,
+    "prThroughput": 31,
+    "weeklyData": [
+      { "day": "Mon", "commits": 6, "prsOpened": 2, "prsMerged": 1 },
+      { "day": "Tue", "commits": 9, "prsOpened": 3, "prsMerged": 2 },
+      { "day": "Wed", "commits": 11, "prsOpened": 4, "prsMerged": 3 },
+      { "day": "Thu", "commits": 7, "prsOpened": 2, "prsMerged": 4 },
+      { "day": "Fri", "commits": 8, "prsOpened": 3, "prsMerged": 2 },
+      { "day": "Sat", "commits": 2, "prsOpened": 1, "prsMerged": 1 },
+      { "day": "Sun", "commits": 0, "prsOpened": 0, "prsMerged": 0 }
+    ],
+    "recentPRs": [
+      { "title": "feat: Implement GraphQL subscriptions", "status": "merged", "reviewTimeHours": 12.5, "linesChanged": 680, "ciPassed": true },
+      { "title": "fix: Database connection pool exhaustion", "status": "merged", "reviewTimeHours": 6.0, "linesChanged": 45, "ciPassed": false },
+      { "title": "feat: Add Redis caching layer for user queries", "status": "open", "reviewTimeHours": null, "linesChanged": 390, "ciPassed": false },
+      { "title": "refactor: Migrate auth middleware to JWT v5", "status": "merged", "reviewTimeHours": 9.2, "linesChanged": 510, "ciPassed": true },
+      { "title": "fix: Fix N+1 query in order listing endpoint", "status": "merged", "reviewTimeHours": 3.8, "linesChanged": 72, "ciPassed": true }
+    ],
+    "recentBugs": [
+      { "title": "Memory leak in WebSocket handler", "severity": "critical", "resolvedInHours": 8 },
+      { "title": "Incorrect pagination offset for large datasets", "severity": "major", "resolvedInHours": 5 },
+      { "title": "Timezone mismatch in scheduled reports", "severity": "major", "resolvedInHours": 14 }
+    ],
+    "cicdRuns": [
+      { "pipeline": "Build & Test", "status": "failed", "durationSeconds": 245, "triggeredBy": "PR #198" },
+      { "pipeline": "Build & Test", "status": "failed", "durationSeconds": 190, "triggeredBy": "PR #196" },
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 220, "triggeredBy": "PR #195" },
+      { "pipeline": "Deploy to Staging", "status": "success", "durationSeconds": 310, "triggeredBy": "merge to main" },
+      { "pipeline": "Deploy to Production", "status": "failed", "durationSeconds": 45, "triggeredBy": "release v1.9.3" }
+    ],
+    "jiraTickets": [
+      { "key": "BE-210", "title": "Design event-driven notification system", "status": "in-progress", "storyPoints": 13, "daysInProgress": 7 },
+      { "key": "BE-215", "title": "Add database migration tooling", "status": "done", "storyPoints": 5, "daysInProgress": 3 },
+      { "key": "BE-218", "title": "Implement retry logic for 3rd-party APIs", "status": "blocked", "storyPoints": 8, "daysInProgress": 6 },
+      { "key": "BE-220", "title": "Optimize search index rebuild", "status": "in-progress", "storyPoints": 8, "daysInProgress": 4 },
+      { "key": "BE-225", "title": "Write load tests for checkout flow", "status": "done", "storyPoints": 5, "daysInProgress": 2 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sneha Patel",
+    "role": "DevOps Engineer",
+    "avatar": "SP",
+    "leadTime": 1.2,
+    "cycleTime": 0.6,
+    "bugRate": 0.9,
+    "deploymentFrequency": 25,
+    "prThroughput": 48,
+    "weeklyData": [
+      { "day": "Mon", "commits": 10, "prsOpened": 4, "prsMerged": 3 },
+      { "day": "Tue", "commits": 15, "prsOpened": 6, "prsMerged": 5 },
+      { "day": "Wed", "commits": 12, "prsOpened": 5, "prsMerged": 4 },
+      { "day": "Thu", "commits": 18, "prsOpened": 7, "prsMerged": 6 },
+      { "day": "Fri", "commits": 14, "prsOpened": 4, "prsMerged": 5 },
+      { "day": "Sat", "commits": 6, "prsOpened": 2, "prsMerged": 2 },
+      { "day": "Sun", "commits": 3, "prsOpened": 1, "prsMerged": 1 }
+    ],
+    "recentPRs": [
+      { "title": "infra: Migrate to Kubernetes 1.29", "status": "merged", "reviewTimeHours": 2.0, "linesChanged": 180, "ciPassed": true },
+      { "title": "fix: Auto-scaling policy not triggering under load", "status": "merged", "reviewTimeHours": 1.2, "linesChanged": 35, "ciPassed": true },
+      { "title": "feat: Add Prometheus alerting rules for P99 latency", "status": "merged", "reviewTimeHours": 0.8, "linesChanged": 95, "ciPassed": true },
+      { "title": "infra: Terraform module for new staging env", "status": "merged", "reviewTimeHours": 1.5, "linesChanged": 220, "ciPassed": true },
+      { "title": "feat: GitHub Actions workflow for canary deploys", "status": "open", "reviewTimeHours": null, "linesChanged": 145, "ciPassed": true }
+    ],
+    "recentBugs": [
+      { "title": "SSL cert auto-renewal failing on edge nodes", "severity": "major", "resolvedInHours": 2 }
+    ],
+    "cicdRuns": [
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 78, "triggeredBy": "PR #450" },
+      { "pipeline": "Deploy to Staging", "status": "success", "durationSeconds": 125, "triggeredBy": "merge to main" },
+      { "pipeline": "Deploy to Production", "status": "success", "durationSeconds": 140, "triggeredBy": "release v3.1.0" },
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 82, "triggeredBy": "PR #448" },
+      { "pipeline": "Infrastructure Validate", "status": "success", "durationSeconds": 55, "triggeredBy": "PR #447" }
+    ],
+    "jiraTickets": [
+      { "key": "OPS-78", "title": "Set up multi-region failover", "status": "done", "storyPoints": 13, "daysInProgress": 4 },
+      { "key": "OPS-82", "title": "Migrate secrets to Vault", "status": "done", "storyPoints": 8, "daysInProgress": 2 },
+      { "key": "OPS-85", "title": "Reduce Docker image sizes", "status": "done", "storyPoints": 3, "daysInProgress": 1 },
+      { "key": "OPS-88", "title": "Implement blue-green deployment", "status": "in-progress", "storyPoints": 8, "daysInProgress": 2 },
+      { "key": "OPS-90", "title": "Cost optimization audit for AWS", "status": "in-progress", "storyPoints": 5, "daysInProgress": 1 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Karan Singh",
+    "role": "QA Engineer",
+    "avatar": "KS",
+    "leadTime": 4.1,
+    "cycleTime": 2.8,
+    "bugRate": 6.2,
+    "deploymentFrequency": 7,
+    "prThroughput": 22,
+    "weeklyData": [
+      { "day": "Mon", "commits": 4, "prsOpened": 2, "prsMerged": 1 },
+      { "day": "Tue", "commits": 7, "prsOpened": 3, "prsMerged": 2 },
+      { "day": "Wed", "commits": 5, "prsOpened": 2, "prsMerged": 2 },
+      { "day": "Thu", "commits": 9, "prsOpened": 4, "prsMerged": 3 },
+      { "day": "Fri", "commits": 6, "prsOpened": 2, "prsMerged": 3 },
+      { "day": "Sat", "commits": 1, "prsOpened": 0, "prsMerged": 0 },
+      { "day": "Sun", "commits": 0, "prsOpened": 0, "prsMerged": 0 }
+    ],
+    "recentPRs": [
+      { "title": "test: Add integration tests for payment flow", "status": "merged", "reviewTimeHours": 5.5, "linesChanged": 450, "ciPassed": true },
+      { "title": "test: Cypress E2E for user registration", "status": "merged", "reviewTimeHours": 8.0, "linesChanged": 380, "ciPassed": false },
+      { "title": "fix: Flaky test in order processing suite", "status": "open", "reviewTimeHours": null, "linesChanged": 65, "ciPassed": false },
+      { "title": "test: Performance benchmark for search API", "status": "merged", "reviewTimeHours": 12.0, "linesChanged": 290, "ciPassed": true },
+      { "title": "feat: Test data factory for staging environment", "status": "merged", "reviewTimeHours": 6.5, "linesChanged": 520, "ciPassed": true }
+    ],
+    "recentBugs": [
+      { "title": "Race condition in concurrent order placement", "severity": "critical", "resolvedInHours": 18 },
+      { "title": "CSV export truncates data at 10k rows", "severity": "major", "resolvedInHours": 8 },
+      { "title": "Search results wrong after index rebuild", "severity": "critical", "resolvedInHours": 24 }
+    ],
+    "cicdRuns": [
+      { "pipeline": "Build & Test", "status": "failed", "durationSeconds": 340, "triggeredBy": "PR #165" },
+      { "pipeline": "Build & Test", "status": "failed", "durationSeconds": 290, "triggeredBy": "PR #163" },
+      { "pipeline": "Build & Test", "status": "success", "durationSeconds": 310, "triggeredBy": "PR #161" },
+      { "pipeline": "Deploy to Staging", "status": "success", "durationSeconds": 250, "triggeredBy": "merge to main" },
+      { "pipeline": "Deploy to Production", "status": "success", "durationSeconds": 220, "triggeredBy": "release v1.8.0" }
+    ],
+    "jiraTickets": [
+      { "key": "QA-55", "title": "Build regression test suite for v2.0", "status": "in-progress", "storyPoints": 13, "daysInProgress": 9 },
+      { "key": "QA-58", "title": "Automate smoke tests for staging", "status": "done", "storyPoints": 8, "daysInProgress": 4 },
+      { "key": "QA-60", "title": "Investigate flaky CI tests", "status": "blocked", "storyPoints": 5, "daysInProgress": 6 },
+      { "key": "QA-63", "title": "Load testing for checkout under Black Friday traffic", "status": "in-progress", "storyPoints": 8, "daysInProgress": 5 },
+      { "key": "QA-65", "title": "Set up visual regression testing", "status": "in-progress", "storyPoints": 5, "daysInProgress": 3 }
+    ]
+  }
+]
